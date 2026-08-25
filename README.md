@@ -34,9 +34,10 @@ Requires Python 3.9+ (standard library only).
 
 ## Scheduling
 
-A Devin Automation ("Daily Golan Heights weather email") runs this script every
-day at 04:00 UTC (07:00 Israel time during DST, 06:00 in winter — the schedule
-is fixed to UTC). The app password is stored as the `GMAIL_APP_PASSWORD` secret.
+The `Daily weather email` GitHub Actions workflow runs this script every day at
+04:00 UTC (07:00 Israel time during DST, 06:00 in winter — cron is fixed to
+UTC). It reads the app password from the `GMAIL_APP_PASSWORD` repository secret,
+and can also be triggered manually from the Actions tab.
 
 ## Locations
 
